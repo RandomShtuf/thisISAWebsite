@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a tab</title>
+        <style>
+            body {
+                background-color: #222;
+            }
+            nav {
+                background-color: #111;
+                padding: 10px;
+                position: fixed;
+                top: 0;
+            }
+            .navlinks {
+                margin-left: 10px;
+                margin-right: 90px;
+                color: green;
+                padding: 5px;
+                border-width: 2px;
+                border-style: solid;
+                background-color: #000;
+            }
+            a:hover {
+                color: gray;
+            }
+            #top {
+                margin-top: 50px;
+                text-align: center;
+                color:green;
+                animation-name: title;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes title {
+                0% {
+                    color: green;
+                }
+                50% {
+                    color: lime;
+                }
+                100%{
+                    color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--NavBar-->
+        <nav>
+            <a class="navlinks" href="landing.html">Home</a>
+            <a class="navlinks" href="YourMum.html">YourMum</a>
+            <a class="navlinks" href="">Cards</a>
+        </nav>
+        <!--welcomePage-->
+        <h1 id="top">This Is A Website</h1>
+    </body>
+</html>
