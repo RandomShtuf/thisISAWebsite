@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             body {
+                background-color: red;
+                animation-name: rainbow;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes rainbow {
+        0% {
+            background-color: red;
+        }
+        25% {
+            background-color: green;
+        }
+        75% {
+            background-color: blue;
+        }
+        100% {
+            background-color: red;
+        }
+    }
+            nav {
+                background-color: #111;
+                padding: 10px;
+                position: fixed;
+                top: 0;
+            }
+            .navlinks {
+                margin-left: 10px;
+                margin-right: 90px;
+                color: green;
+                padding: 5px;
+                border-width: 2px;
+                border-style: solid;
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <!--NavBar-->
+        <nav>
+            <a class="navlinks" href="landing.html">Home</a>
+            <a class="navlinks" href="YourMum.html">YourMum</a>
+            <a class="navlinks" href="card.html">Cards</a>
+        </nav>
+    </body>
+</html>

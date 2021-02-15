@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #222;
+            }
+            nav {
+                background-color: #111;
+                padding: 10px;
+                position: fixed;
+                top: 0;
+            }
+            .navlinks {
+                margin-left: 10px;
+                margin-right: 90px;
+                color: green;
+                padding: 5px;
+                border-width: 2px;
+                border-style: solid;
+                background-color: #000;
+            }
+            #top {
+        margin-top: 50px;
+        text-align: center;
+        color: white;
+    }
+    div {
+        width: 100px;
+        border-style: solid;
+        margin: auto;
+    }
+    .whiteCard {
+        background-color:white;
+    }
+    .rainbowCard {
+        background: linear-gradient(135deg, red, green, blue);
+    }
+    .beeCard {
+        background: repeating-linear-gradient(yellow 0px, yellow 10px, black 10px, black 20px);
+    }
+    .animatedCard {
+        background-color: red;
+    }
+    .animatedCard:hover {
+        animation-name: rainbow;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes rainbow {
+        0% {
+            background-color: red;
+        }
+        25% {
+            background-color: green;
+        }
+        75% {
+            background-color: blue;
+        }
+        100% {
+            background-color: red;
+        }
+    }
+    a {
+        color:black;
+    }
+    .white {
+        color: red;
+        font-weight: bolder;
+    }
+    p {
+        text-align: center;
+        padding: 5px;
+    }
+        </style>
+    </head>
+    <body>
+        <!--NavBar-->
+        <nav>
+            <a class="navlinks" href="landing.html">Home</a>
+            <a class="navlinks" href="YourMum.html">YourMum</a>
+            <a class="navlinks" href="card.html">Cards</a>
+        </nav>
+        <h1 id="top">Cards</h1>
+        <div class="whiteCard">
+            <a href="white.html"><p>White</p></a>
+        </div>
+        <hr>
+        <div class="rainbowCard">
+            <a href="rainbow.html"><p>Rainbow</p></a>
+        </div>
+        <hr>
+        <div class="beeCard">
+            <a href="bee.html"><p class="white">Bee</p></a>
+        </div>
+        <hr>
+        <div class="animatedCard">
+            <a href="animated.html"><p>Animated</p></a>
+        </div>
+    </body>
+</html>
