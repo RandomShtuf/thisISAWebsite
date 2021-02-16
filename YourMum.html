@@ -5,59 +5,91 @@
         <style>
             
             body {
-        background-color: #222;
-        color:white;
-        margin: 0;
-        padding: 0;
-    }
-    nav {
+                background-color: #222;
+                color:white;
+                margin: auto;
+                padding: 0;
+                text-align: center;
+            }
+            nav {
+                width: 100%;
                 background-color: #111;
                 padding: 10px;
                 position: fixed;
                 top: 0;
             }
             .navlinks {
-                margin-left: 10px;
-                margin-right: 90px;
+                margin: auto;
+                margin-left: 50px;
+                margin-right: 50px;
                 color: green;
                 padding: 5px;
                 border-width: 2px;
                 border-style: solid;
                 background-color: #000;
             }
+            .navlinks:hover {
+                animation-name: navbutton;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+            @keyframes navbutton {
+                0% {
+                    background-color: #000;
+                }
+                100% {
+                    background-color: #333;
+                }
+            }
             a:hover {
                 color: gray;
             }
             .monospace {
-        font-family: monospace;
-    }
-    .Disclaimer {
-        font-size: 10px;
-    }
-    .box {
-        border-style: dashed;
-        border-width: 5px;
-        background-color:rgb(85, 38, 23);
-        padding: 50px;
-        color: black;
-    }
-    .blue {
-        color: blue;
-    }
-    .smol-image {
-        width: 100px;
-        height: 100px;
-        border-style: solid;
-        border-color: white;
-        border-width: 10px;
-        border-radius: 50%;
-    }
-    a {
-        color:red;
-    }
-    #top {
-        margin-top: 50px;
-    }
+                font-family: monospace;
+            }
+            .Disclaimer {
+                font-size: 10px;
+            }
+            .box {
+                border-style:groove;
+                border-width: 5px;
+                background-color: black;
+                width: 500px;
+                padding: 50px;
+                color: white;
+            }
+            .blue {
+                color: blue;
+            }
+            .smol-image {
+                width: 100px;
+                height: 100px;
+                border-style: solid;
+                border-color: white;
+                border-width: 10px;
+                border-radius: 50%;
+            }
+            a {
+                color: red;
+            }
+            #top {
+                margin-top: 50px;
+            }
+            #change-da-world:hover {
+                animation-name: change-da-world;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+            @keyframes change-da-world {
+                0%{
+                    opacity: 100%;
+                }
+                100%{
+                    opacity: 0%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -67,7 +99,6 @@
                 <a class="navlinks" href="YourMum.html">YourMum</a>
                 <a class="navlinks" href="card.html">Cards</a>
             </nav>
-       <center>
         <!--Title-->
         <h1 id="top">This is a Title</h1>
         <p class="monospace Disclaimer">Disclaimer!<br>The <strong>jokes/joke</strong> in this page is supposed to be funny and <strong>does not intend to harm anyone</strong>><br>if you are easily offended please exit the page immediatetly</p>
@@ -75,7 +106,9 @@
         <a href="https://vintagespace.files.wordpress.com/2011/04/saturn-v-apollo-4-prelaunch.jpg" target="blank"><img src="https://vintagespace.files.wordpress.com/2011/04/saturn-v-apollo-4-prelaunch.jpg" width="144px"></a>
         <!--Question-->
         <p>This spaceship is big, but do you know <a href="#Your Mum">what else is big?</a></p>
+        <center>
         <p class="box">the padding on this sentence is huge, but do you know <a href="#Your Mum">what else is huge?</a></p>
+        </center>
         <a href="https://vintagespace.files.wordpress.com/2011/04/saturn-v-apollo-4-prelaunch.jpg" target="blank"><img class="smol-image" src="https://vintagespace.files.wordpress.com/2011/04/saturn-v-apollo-4-prelaunch.jpg"></a>
         <p>This image is round, but do you know <a href="#Your Mum">what else is round?</a></p>
         <p class="blue">this sentence is blue, but do you know <a href="#Your Mum">what else is blue?</a></p>
@@ -319,10 +352,10 @@
         <p>.</p>
         <p>.</p>
         <p>.</p>
-        <p>.</p>
+        <p id="Your Mum">.</p>
         <!--Your Mum Joke-->
         <div>
-        <h1 id="Your Mum">Your Mum</h1>
+        <h1>Your Mum</h1>
         <a href="https://thanksforyourplaying.files.wordpress.com/2013/08/oooh_zps67524ece.gif" target="blank"><img src="https://thanksforyourplaying.files.wordpress.com/2013/08/oooh_zps67524ece.gif"></a>
         <!--Form-->
         <h2>Give your information</h2>
@@ -335,7 +368,9 @@
             </div>
         </form>
         </div>
+        <div>
+            <a href="https://i.kym-cdn.com/entries/icons/original/000/031/045/maxresdefault_(1).jpg" target="blank"><img id="change-da-world" src="https://i.kym-cdn.com/entries/icons/original/000/031/045/maxresdefault_(1).jpg" width="360px"></a>
+        </div>
         <a href="#top">back to top</a>
-        </center>
     </body>
 </html>

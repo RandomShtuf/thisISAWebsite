@@ -6,6 +6,7 @@
                 background-color: #222;
             }
             nav {
+                width: 100%;
                 background-color: #111;
                 padding: 10px;
                 position: fixed;
@@ -20,6 +21,20 @@
                 border-style: solid;
                 background-color: #000;
             }
+            .navlinks:hover {
+                animation-name: navbutton;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+            @keyframes navbutton {
+                0% {
+                    background-color: #000;
+                }
+                100% {
+                    background-color: #333;
+                }
+            }
             #top {
         margin-top: 50px;
         text-align: center;
@@ -28,10 +43,11 @@
     div {
         width: 100px;
         border-style: solid;
+        border-radius: 10%;
         margin: auto;
     }
     .whiteCard {
-        background-color:white;
+        background:linear-gradient(135deg, white, gray);
     }
     .rainbowCard {
         background: linear-gradient(135deg, red, green, blue);
